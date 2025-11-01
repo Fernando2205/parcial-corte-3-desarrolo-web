@@ -1,7 +1,8 @@
-import { usePokemonData } from '../hooks/usePokemonData'
-import { SPRITE_SOURCES } from '../constants/config'
-import { capitalize, formatPokedexNumber } from '../utils/helpers'
-import { getPokemonMainColor } from '../constants/typeColors'
+import { usePokemonData } from '../../hooks/usePokemonData'
+import { SPRITE_SOURCES } from '../../constants/config'
+import { capitalize, formatPokedexNumber } from '../../utils/helpers'
+import { getPokemonMainColor } from '../../constants/typeColors'
+import { LoadingScreen, ErrorScreen } from '../ui'
 
 /**
  * Componente de prueba para validar la carga de datos de PokeAPI
@@ -11,26 +12,12 @@ const TestPokemones = () => {
 
   // Estado de carga
   if (loading) {
-    return (
-      <div className='min-h-screen flex items-center justify-center bg-gray-900'>
-        <div className='text-center'>
-          <div className='animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-yellow-400 mx-auto mb-4' />
-          <p className='text-white text-xl'>Cargando Pokémon...</p>
-        </div>
-      </div>
-    )
+    return <LoadingScreen message='Cargando Pokémon...' />
   }
 
   // Estado de error
   if (error) {
-    return (
-      <div className='min-h-screen flex items-center justify-center bg-gray-900'>
-        <div className='bg-red-500 text-white p-6 rounded-lg max-w-md'>
-          <h2 className='text-2xl font-bold mb-2'> Error</h2>
-          <p>{error}</p>
-        </div>
-      </div>
-    )
+    return <ErrorScreen error={error} />
   }
 
   return (
