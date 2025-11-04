@@ -40,6 +40,16 @@ export const STAT_INDICES = {
 }
 
 /**
+ * Colores para visualización de estadísticas en tarjetas 3D
+ */
+export const STAT_COLORS = {
+  hp: '#FF5959',
+  attack: '#F5AC78',
+  defense: '#FAE078',
+  speed: '#FA92B2'
+}
+
+/**
  * Calcula el porcentaje de una estadística respecto a su máximo
  * @param {number} value - Valor de la estadística
  * @param {string} statType - Tipo de estadística (hp, attack, defense, speed)

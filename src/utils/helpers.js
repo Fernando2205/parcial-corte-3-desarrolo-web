@@ -11,11 +11,11 @@ export const capitalize = (str) => {
 /**
  * Formatea el número de Pokédex con ceros a la izquierda
  * @param {number} id - ID del Pokémon
- * @returns {string} ID formateado (ej: #0001)
+ * @returns {string} ID formateado (ej: #001)
  */
 
 export const formatPokedexNumber = (id) => {
-  return `#${String(id).padStart(4, '0')}`
+  return `#${String(id).padStart(3, '0')}`
 }
 
 /**
