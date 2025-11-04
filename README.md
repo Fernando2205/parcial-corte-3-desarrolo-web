@@ -2,9 +2,9 @@
 
 ## 1. Integrantes del Grupo
 
-| Nombre Completo                 | Rol                                                                      |
-| ------------------------------- | ------------------------------------------------------------------------ |
-| Delio Fernando Palacios Viafara | Full Stack Developer (Frontend, 3D Graphics, Integra & Manejo de estado) |
+| Nombre Completo                 | Rol                                                                                     |
+| ------------------------------- | --------------------------------------------------------------------------------------- |
+| Delio Fernando Palacios Viafara | Full Stack Developer (Frontend, 3D Graphics, Integración con la API & Manejo de estado) |
 
 ## 2. Descripción del Proyecto
 
@@ -120,7 +120,7 @@ Cada tarjeta incluye:
 8. **Emblema 3D**: Flotando al costado de la tarjeta
 9. **Efectos visuales**:
    - Rotación automática continua
-   - Hover: Escala aumenta a 1.15x
+   - Hover: Escala aumenta a 1.2x
    - Selección: Aro dorado giratorio con partículas brillantes
    - Luz dinámica que cambia con hover
 
