@@ -262,7 +262,7 @@ const PokemonCard3D = ({
     >
       {/* Base de la tarjeta */}
       <RoundedBox
-        args={[2.6, 4, 0.15]}
+        args={[2.9, 4, 0.15]}
         radius={0.1}
         smoothness={4}
       >
@@ -277,7 +277,7 @@ const PokemonCard3D = ({
 
       {/* Fondo interno */}
       <mesh position={[0, 0, 0.08]}>
-        <boxGeometry args={[2.4, 3.8, 0.02]} />
+        <boxGeometry args={[2.7, 3.8, 0.02]} />
         <meshStandardMaterial
           color='#ffffff'
           roughness={0.05}
